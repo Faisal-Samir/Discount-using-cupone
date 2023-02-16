@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <script src="https://kit.fontawesome.com/17d2e8cf56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="mt-24">
+        <h3 class="text-4xl font-semibold w-3/5 border mx-auto text-center bg-lime-200 py-3"><span class="text-orange-400">Hunger</span> for food</h3>
+    </header>
+    <main>
+        <section class=" grid grid-cols-1 lg:grid-cols-3 w-4/5 lg:w-3/5 border mx-auto mt-1 gap-4">
+            <!-- item 1 -->
+            <div>
+                <div class="overflow-hidden border-red-400 border-4">
+                    <img src="images/burger-1.jpeg" class="hover:scale-110 duration-150 max-h-64" alt="">
+                </div>
+                <span class="font-bold mt-2 text-xl">Mexican Burger</span>
+                <i class="fa-solid fa-star fa-xs pl-12"></i>
+                <small class="pl-1">Review: 3.5</small>
+                <span class="text-lg mt-1">Price : <span id="burgerPrice">240</span> Tk</span>
+                <input type="number" name="" id="burgerInput" class="w-1/6 ml-10 pl-2 border-2 border-red-400 rounded">
+                <button class="bg-lime-400 px-3 py-2 ml-7 rounded hover:bg-green-500 " id="burgerAdd-btn">Add</button>
+            </div>
+            <!-- item 2 -->
+            <div>
+                <div class="overflow-hidden border-red-400 border-4">
+                    <img src="images/nachos.jpg" class="hover:scale-110 duration-150 max-h-64" alt="">
+                </div>
+                <span class="font-bold mt-2 text-xl ">Spanish Nachos</span>
+                <i class="fa-solid fa-star fa-xs pl-12"></i>
+                <small class="pl-1">Review: 3.9</small>
+                <span class="text-lg mt-1">Price : <span id="nachosPrice">220</span> Tk</span>
+                <input type="number" name="" id="nachosInput" class="w-1/6 ml-10 pl-2 border-2 border-red-400 rounded">
+                <button class="bg-lime-400 px-3 py-2 ml-7 rounded hover:bg-green-500 " id="nachosAdd-btn">Add</button>
+            </div>
+            <!-- item 3 -->
+            <div>
+                <div class="overflow-hidden border-red-400 border-4">
+                    <img src="images/pizza.jpg" class="hover:scale-110 duration-150 max-h-64" alt="">
+                </div>
+                <span class="font-bold mt-2 text-xl ">Valentine Pizza</span>
+                <i class="fa-solid fa-star fa-xs pl-12"></i>
+                <small class="pl-1">Review: 4.2</small>
+                <span class="text-lg mt-1">Price : <span id="pizzaPrice">220</span> Tk</span>
+                <input type="number" name="" id="pizzaInput" class="w-1/6 ml-10 pl-2 border-2 border-red-400 rounded">
+                <button class="bg-lime-400 px-3 py-2 ml-7 rounded hover:bg-green-500" id="pizzaAdd-btn">Add</button>
+            </div>
+        </section>
+        <section class=" w-4/5 lg:w-1/5 border mx-auto mt-10 ">
+            <h3 class="text-2xl font-semibold">Total bill : <span id="final-bill">00</span> Tk</h3>
+            <label for="" class="text-xl font-semibold">Coupon:</label>
+            <input type="text" name="" class="ml-3 border-2 w-2/6" id="couponInput">
+            <button class="bg-lime-400 px-3 py-2 ml-2 rounded " id="coupon-btn">Coupon</button>
+            <h3>After get 30% discount bill : <span id="discount-bill">00</span> Tk</h3>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
